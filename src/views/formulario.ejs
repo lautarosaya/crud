@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head") %>
+  <body>
+    <main>
+      <h1>Prueba Buscar</h1>
+      <div class="flex j-c-c">
+        <form action="/formulario" method="post" class="flex flex-d-c">
+          <label for="">Nombre</label>
+          <input type="text" name="nombre" />
+          <br />
+          <label for="">Apellido</label>
+          <input type="text" name="apellido" />
+          <br />
+          <label for="">Edad</label>
+          <input type="number" name="edad" />
+          <br />
+          <input type="submit" value="Enviar" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

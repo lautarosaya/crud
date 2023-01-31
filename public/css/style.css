@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.j-c-c {
+  justify-content: center;
+}
+
+.border {
+  border: black 2px solid;
+  border-radius: 2px;
+}
+
+.gap {
+  gap: 1rem;
+}
+
+.flex-d-c {
+  flex-direction: column;
+}
+
+.w-50 {
+  width: 50%;
+}
