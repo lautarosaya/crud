@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head") %>
+  <body>
+    <main>
+      <h1>Prueba Editar</h1>
+      <div class="flex j-c-c">
+        <form action="/editar?_method=PUT" method="post" class="flex flex-d-c">
+          <label for="">Nombre</label>
+          <input
+            type="text"
+            name="nombre"
+            value="<%= clienteEditar.nombre %>"
+          />
+          <br />
+          <label for="">Apellido</label>
+          <input
+            type="text"
+            name="apellido"
+            value="<%= clienteEditar.apellido %>"
+          />
+          <br />
+          <label for="">Edad</label>
+          <input type="number" name="edad" value="<%= clienteEditar.edad %>" />
+          <br />
+          <input type="submit" value="Editar" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

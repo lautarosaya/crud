@@ -35,4 +35,18 @@ module.exports = {
     };
     res.send(usuario);
   },
+
+  verEditar: (req, res) => {
+    const idUser = req.params.idUser;
+
+    let clienteEditar = dataClients.find((cliente) => cliente.id == idUser);
+    res.render("editar", { clienteEditar });
+  },
+  editar: (req, res) => {
+    res.send(req.body);
+  },
+
+  delete: (req, res) => {
+    res.send("delete");
+  },
 };

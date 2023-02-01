@@ -10,4 +10,9 @@ router.get("/mostrarTodos", mainController.mostrarTodos);
 
 router.get("/formulario", mainController.formulario);
 router.post("/formulario", mainController.crear);
+
+router.get("/editar/:idUser", mainController.verEditar);
+router.put("/editar", mainController.editar);
+
+router.delete("/delete/:idUser", mainController.delete);
 module.exports = router;

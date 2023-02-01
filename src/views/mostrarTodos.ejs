@@ -5,9 +5,15 @@
     <main>
       <h1>Muestra Todo</h1>
       <% dataClients.forEach(cliente => { %>
-      <h2><%= cliente.nombre %></h2>
-      <h2><%= cliente.apellido %></h2>
-      <h2><%= cliente.edad %></h2>
+      <a href="/editar/<%= cliente.id %> ">
+        <h2><%= cliente.nombre %></h2>
+        <h2><%= cliente.apellido %></h2>
+        <h2><%= cliente.edad %></h2>
+
+        <form action="/delete/<%= cliente.id %>?_method=DELETE" method="post">
+          <button type="submit">Delete</button>
+        </form>
+      </a>
       <br />
       <% }) %>
     </main>
